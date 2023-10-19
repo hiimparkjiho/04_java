@@ -55,9 +55,9 @@ public class Quiz {
         // 5000원 미만이면 "굶는 중입니다."가 화면에 출력되도록 하세요.
         // 이 때 메서드 한 개를 이용하되, static을 쓰지 않고 return 값 반환을 이용해서 만들어 보세요.
 
-        System.out.println("일 식비 입력: ");
-        int price = sc.nextInt();
-        smethod.money(price);
+//        System.out.println("일 식비 입력: ");
+//        int price = sc.nextInt();
+//        smethod.money(price);
 
         //        계산기 만들기
 //        계산기에 필요한 기능은 + , - , * , / , %  총 5가지 연산자다.
@@ -71,11 +71,14 @@ public class Quiz {
 //        결과는 4입니다
 
         System.out.println("첫 번째 숫자를 입력하세요 : ");
-        int calc1 = sc.nextInt();
+        double calc1 = sc.nextInt();
+
         System.out.println("연산할 기호를 쓰세요 : ");
-        String sign = sc.nextLine();
+        String sign = sc.next();
+
         System.out.println("두 번째 숫자를 입력하세요: ");
-        int calc2 = sc.nextInt();
-        System.out.println("");
+        double calc2 = sc.nextInt();
+
+        smethod.calculation(calc1, calc2, sign);
     }
 }
