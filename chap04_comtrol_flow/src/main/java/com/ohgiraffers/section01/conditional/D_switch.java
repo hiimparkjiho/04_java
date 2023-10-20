@@ -80,5 +80,69 @@ public class D_switch {
         return order;
     }
 
+//    public void quiz01(){
+//        Scanner scan = new Scanner(System.in);
+//        int price = 0;
+//        String product = "";
+//        for(;;){
+//            System.out.println("자판기 입니다. 음료수를 선택해주세요. 계산을 원하시면 계산을 입력해주세요. \n사이다, 콜라, 환타, 바카스, 핫식스");
+//            System.out.println("음료수를 선택해주세요 : ");
+//             product = scan.next();
+//             if(product.equals("사이다")){
+//                price += 500;
+//            }if(product.equals("콜라")){
+//                price += 600;
+//            }if(product.equals("환타")){
+//                price += 700;
+//            }if(product.equals("바카스")){
+//                price += 1000;
+//            }if(product.equals("핫식스")){
+//                price += 1500;
+//            } if(product.equals("계산")){
+//                System.out.println("가격은 " + price + "원 입니다");
+//                break;
+//            }
+//        }
+//    }
+
+    public void VendingMachine() {
+        //
+        Scanner scan = new Scanner(System.in);
+
+        int price = 0;
+
+        System.out.println("자판기 입니다. 음료수를 선택해주세요");
+        System.out.println("사이다-500원  콜라-600원  환타-700원  바카스-1000원  핫식스-1500원");
+        while (true) {
+
+            System.out.println("계산을 원하시면 계산을 입력해주세요");
+
+            String product = scan.next();
+
+            switch (product) {
+                case "사이다":
+                    price += 500;
+                    break;
+                case "콜라":
+                    price += 600;
+                    break;
+                case "환타":
+                    price += 700;
+                    break;
+                case "바카스":
+                    price += 1000;
+                    break;
+                case "핫식스":
+                    price += 1500;
+                    break;
+                case "계산":
+                    System.out.println("가격은 " + price + "원 입니다.");
+                    return;
+                default:
+                    System.out.println("잘못된 음료수입니다. 다시 선택해주세요.");
+            }
+        }
+    }
+
 
 }
