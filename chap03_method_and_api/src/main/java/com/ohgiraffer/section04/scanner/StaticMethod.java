@@ -21,11 +21,11 @@ public class StaticMethod {
 
     public void calculation(double calc1, double calc2, String sign){
         if(sign.equals("+")){
-            System.out.println("값은 " + (calc1 + calc2));
+            System.out.println("값은 " + (int)(calc1 + calc2));
         }else if(sign.equals("-")){
-            System.out.println("값은 " + (calc1 - calc2));
+            System.out.println("값은 " + (int)(calc1 - calc2));
         }else if(sign.equals("*")){
-            System.out.println("값은 " + (calc1 * calc2));
+            System.out.println("값은 " + (int)(calc1 * calc2));
         }else if(sign.equals("/")){
             System.out.println("값은 " + (calc1 / calc2));
         }else{
