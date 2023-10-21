@@ -29,5 +29,8 @@ public class Application {
         D_switch dSwitch = new D_switch();
         dSwitch.VendingMachine();
 
+        Jap jap = new Jap();
+        jap.quiz01();
+
     }
 }
