@@ -30,7 +30,8 @@ public class Application {
         dSwitch.VendingMachine();
 
         Jap jap = new Jap();
-        jap.quiz01();
+        //ap.quiz01();
+
 
     }
 }

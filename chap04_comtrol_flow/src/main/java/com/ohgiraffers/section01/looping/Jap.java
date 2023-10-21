@@ -10,10 +10,10 @@ public class Jap {
 
     public void quiz01() {
         Scanner scan = new Scanner(System.in);
+        System.out.println("자판기 입니다. 음료수를 선택해주세요. 계산을 원하시면 계산을 입력해주세요. \n사이다, 콜라, 환타, 바카스, 핫식스");
         int price = 0;
         String product = "";
         for(;;){
-            System.out.println("자판기 입니다. 음료수를 선택해주세요. 계산을 원하시면 계산을 입력해주세요. \n사이다, 콜라, 환타, 바카스, 핫식스");
             System.out.println("음료수를 선택해주세요 : ");
             product = scan.next();
             if(product.equals("사이다")){
