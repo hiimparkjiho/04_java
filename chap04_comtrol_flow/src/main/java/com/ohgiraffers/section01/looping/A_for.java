@@ -70,6 +70,19 @@ public class A_for {
         * */
 
         System.out.println("두 수를 입력받아 작은 수부터 큰 수까지 합계를 구하는 프로그램입니다.");
+        Scanner scan = new Scanner(System.in);
+        System.out.println("첫 번째 수를 입력해주세요");
+        int num1 = scan.nextInt();
+        System.out.println("두 번째 수를 입력해주세요");
+        int num2 = scan.nextInt();
+
+        int sum = 0;
+        for(int i = num1; i <= num2; i++){
+            sum += i;
+        }
+        System.out.println(sum);
+
+
 
 
     }
