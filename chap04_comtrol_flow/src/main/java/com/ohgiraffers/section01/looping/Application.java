@@ -27,11 +27,11 @@ public class Application {
 
         // 사용자 이름
         D_switch dSwitch = new D_switch();
-        //dSwitch.VendingMachine();
+        dSwitch.VendingMachine();
 
         Jap jap = new Jap();
         //ap.quiz01();
-        afor.testForExample4();
+        //afor.testForExample4();
 
 
     }

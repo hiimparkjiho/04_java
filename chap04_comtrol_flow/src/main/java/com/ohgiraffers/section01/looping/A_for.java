@@ -93,9 +93,9 @@ public class A_for {
     * @Return void
     * */
     public void gugudan(int firstNum){
-        //Scanner scan = new Scanner(System.in);  // 몇단을 수행할건지 받는다
-        //System.out.println("숫자를 입력해주시오: ");
-        //int num = scan.nextInt();
+        Scanner scan = new Scanner(System.in);  // 몇단을 수행할건지 받는다
+        System.out.println("숫자를 입력해주시오: ");
+        int num = scan.nextInt();
         for(int i = 1; i < 10; i++){
             System.out.println(firstNum + " x " + i + " = " + firstNum * i);
         }
