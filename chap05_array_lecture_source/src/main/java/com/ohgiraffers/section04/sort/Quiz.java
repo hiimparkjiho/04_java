@@ -94,14 +94,37 @@ public class Quiz {
         *
         * */
 
-        Scanner scan = new Scanner(System.in);
-        int[] people = new int[3];
-        for(int i = 0; i < people.length; i++){
-            System.out.println(i + 1 + "번째 운 없는 자의 이름을 입력하세요");
-            
-            int unlNum = (int)(Math.random() * people.length);
+//        Scanner scan = new Scanner(System.in);
+//        String[] people = new String[3];
+//        for(int i = 0; i < people.length; i++){
+//            System.out.println(i + 1 + "번째 운 없는 자의 이름을 입력하세요");
+//            people[i] = scan.next();
+//        }
+//        int unlNum = (int)(Math.random() * people.length);
+//        System.out.println("지옥에 갈 사람은 " + people[unlNum] + "입니다!");
+
+        // 문제 3
+        // 포카드 만들기
+        // 랜덤한 카드를 4장 뽑아서 포카드인지 아닌지 확인하고 포카드일 시 "포 카드!", 그외에는 "꽝!"이 나오도록 출력
+        /*
+         * 예시
+         * 포 카드를 뽑는 운 게임
+         * ===========================================
+         * 게임 진행 여부 묻기
+         * 당신이 뽑은 카드는
+         * SPADE ACE, CLOVER KING, CLOVER 4, HEART 3
+         * 꽝!*/
+        int[] card = new int[4];
+        String[] shapes = {"SPADE", "CLOVER", "HEART", "DIAMOND"};
+        String[] charNumber = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "JACK", "QUEEN", "KING", "ACE"};
+        int shapesNum;
+        int charN;
+        for(int i = 1; i < card.length; i++){
+             shapesNum = (int)(Math.random() * shapes.length);
+             charN = (int)(Math.random() * charNumber.length);
+            System.out.println(shapes[shapesNum] + " " + charNumber[charN]);
+            //if(charNumber[charN].equals())
         }
-        System.out.println("지옥에 갈 사람은 " + people[unlNum] + "입니다!");
 
 
     }
