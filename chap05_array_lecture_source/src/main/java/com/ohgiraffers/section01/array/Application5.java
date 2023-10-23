@@ -13,7 +13,7 @@ public class Application5 {
         int shapesNum = (int)(Math.random() * shapes.length);
         int num = (int)(Math.random() * charNumber.length);
 
-        System.out.println(shapes[shapesNum] + num);
+        System.out.println(shapes[shapesNum] + " " + charNumber[num]);
 
     }
 }
