@@ -46,7 +46,7 @@ public class Quiz {
                 max = numbers[i];
             }
         }
-        System.out.println(max);
+        //System.out.println(max);
 
 
 //        System.out.println("===================시급 구하기 문제==================");
@@ -119,12 +119,12 @@ public class Quiz {
         String[] charNumber = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "JACK", "QUEEN", "KING", "ACE"};
         int shapesNum;
         int charN;
-        for(int i = 1; i < card.length; i++){
+        for(int i = 0; i < card.length; i++){
              shapesNum = (int)(Math.random() * shapes.length);
              charN = (int)(Math.random() * charNumber.length);
-            System.out.println(shapes[shapesNum] + " " + charNumber[charN]);
-            //if(charNumber[charN].equals())
+             System.out.println(shapes[shapesNum] + " " + charNumber[charN]);
         }
+
 
 
     }
