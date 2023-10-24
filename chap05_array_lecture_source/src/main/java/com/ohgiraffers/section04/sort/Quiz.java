@@ -94,14 +94,14 @@ public class Quiz {
         *
         * */
 
-//        Scanner scan = new Scanner(System.in);
-//        String[] people = new String[3];
-//        for(int i = 0; i < people.length; i++){
-//            System.out.println(i + 1 + "번째 운 없는 자의 이름을 입력하세요");
-//            people[i] = scan.next();
-//        }
-//        int unlNum = (int)(Math.random() * people.length);
-//        System.out.println("지옥에 갈 사람은 " + people[unlNum] + "입니다!");
+        Scanner scan = new Scanner(System.in);
+        String[] people = new String[3];
+        for(int i = 0; i < people.length; i++){
+            System.out.println(i + 1 + "번째 운 없는 자의 이름을 입력하세요");
+            people[i] = scan.next();
+        }
+        int unlNum = (int)(Math.random() * people.length);
+        System.out.println("지옥에 갈 사람은 " + people[unlNum] + "입니다!");
 
         // 문제 3
         // 포카드 만들기
