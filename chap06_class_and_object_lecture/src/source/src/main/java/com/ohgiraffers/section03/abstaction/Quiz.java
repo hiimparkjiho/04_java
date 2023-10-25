@@ -8,41 +8,51 @@ public class Quiz {
         //원 을 Class 로 설계하세요.
         //멤버 변수는 아래를 참조 하세요.
 
-        // 예)원의 넓이 : 200.96
-        // 원의 둘레 : 50.24
-
+        // 예)원의 넓이 : 3.14
+        // 원의 둘레 : 6.28
+//        Circle circle = new Circle();
         Scanner scan = new Scanner(System.in);
 //        System.out.println("반지름을 입력하시오 : ");
 //        int radius = scan.nextInt();
-//        Circle circle = new Circle(radius);
-//        circle.calculateArea(radius);
-//        circle.calculateRound(radius);
+//        System.out.println("원의 개수를 입력해주시오 : ");
+//        int count = scan.nextInt();
+//
+//        System.out.println("원의 넓이: " + circle.calculateArea(radius));
+//        System.out.println("원의 둘레: " + circle.calculateRound(radius));
+//        System.out.println("원 " + count + "개의 넓이: " + circle.calculateArea(count, radius));
 
-//        System.out.println("숫자를 입력하시오 : ");
+//        System.out.println("숫자를 입력해주세요: ");
 //        int num = scan.nextInt();
-//        for(int i = num; i > 0; i--){
-//            for(int j = i; j > 0; j--){
-//                System.out.print("*");
+//
+//        for(int i = 0; i <= num; i++){
+//            System.out.print("@");
+//            for(int j = 0; j < i; j++){
+//                System.out.print(j);
 //            }
 //            System.out.println();
 //        }
-//
-
-        int[][] scores = {
-                {89, 93, 91, 93, 92, 78, 90, 90, 93, 90},
-                {91, 82, 72, 98, 92, 87, 77, 87, 74, 88},
-                {98, 93, 94, 91, 97, 94, 91, 96, 98, 90},
-                {65, 63, 57, 87, 88, 92, 78, 85, 100, 68},
-                {45, 50, 48, 63, 67, 58, 40, 66, 47, 64}
-        };
-
-        int sum = 0;
-        for(int i = 0; i < scores.length; i++){
-            for(int j = 0; j < scores.length; j++){
-                System.out.println(scores.length);
-                System.out.println(scores[i].length);
-                //System.out.print(scores[i][j] + " ");
+        for(int i = 0; i < 5; i++) {  // 행
+            for(int j = 0; j < 4 - i; j++) {// 공백
+                System.out.print("@");
             }
+            // 별찍기
+            // 짝수: 2n,  홀수: 2n + 1 또는 2n - 1
+            for(int j = 0; j < (2 * i) + 1; j++) { // 별의 개수는 홀수개, 공식만큼 돌린다.
+                System.out.print("*");
+            }
+
+            System.out.println();
         }
+        System.out.println("========================================");
+        for(int i = 0; i < 5; i++){
+            for(int j = 9; j > i; j--){
+                System.out.print("*");
+            }
+            for(int k = 0; k < i; k++){
+                System.out.print("@");
+            }
+            System.out.println();
+        }
+
     }
 }
