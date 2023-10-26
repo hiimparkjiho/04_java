@@ -14,16 +14,16 @@ public class B_while {
         Scanner scan = new Scanner(System.in);
         String value = scan.nextLine();
         int i = 0;
-//        while (i < value.length()){
-//            //System.out.println(i);
-//            i++;
-//            if(i%2 == 0){
-//                continue;
-//            } else if (i == 11) {
-//                break;
-//            }
-//            System.out.println(i);
-//        }
+        while (i < value.length()){
+            //System.out.println(i);
+            i++;
+            if(i%2 == 0){
+                continue;
+            } else if (i == 11) {
+                break;
+            }
+            System.out.println(i);
+        }
 
         /*
         * do while(표현식)

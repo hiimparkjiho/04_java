@@ -1,4 +1,4 @@
-package source.src.main.java.com.ohgiraffers.section04.parameter;
+package source.src.main.java.com.ohgiraffers.section05.parameter;
 
 public class ParameterTest {
 

@@ -25,7 +25,7 @@ public class Application02 {
 
         //실수 간의 강제 형변환
         double dnum = 8.0;
-        // float fnum = dnum // 이와 같이 형변환을 하지 않을 경우 컴파일러는 데이터 손실의 위험때문에 에러를 발생시킨다.
+        // float fnum = dnum; // 이와 같이 형변환을 하지 않을 경우 컴파일러는 데이터 손실의 위험때문에 에러를 발생시킨다.
         float fnum = (float)dnum;
         System.out.println(fnum);
 

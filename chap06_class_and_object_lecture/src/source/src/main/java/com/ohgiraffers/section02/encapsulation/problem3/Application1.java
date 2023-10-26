@@ -16,6 +16,9 @@ public class Application1 {
         monster2.setInfo("삼치"); // 프랑켄
         monster2.setHp(500);
         System.out.println(monster.getInfo());
+        System.out.println(monster.hashCode());
+        System.out.println("================================");
+        System.out.println(monster1.hashCode());
         System.out.println(monster1.getInfo());
         System.out.println(monster2.getInfo());
     }
