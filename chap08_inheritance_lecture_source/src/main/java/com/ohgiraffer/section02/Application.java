@@ -1,6 +1,7 @@
 package main.java.com.ohgiraffer.section02;
 
 import main.java.com.ohgiraffer.section02.Employ.Seller;
+import main.java.com.ohgiraffer.section02.car.Car;
 import main.java.com.ohgiraffer.section02.car.ElectricCar;
 import main.java.com.ohgiraffer.section02.car.OldCar;
 
@@ -20,9 +21,29 @@ public class Application {
         OldCar sonata = new OldCar("H", 2000, "sonate", "diesel");
 
         System.out.println("영업사원이 입사했습니다");
-        Seller seller = new Seller("노홍철");
-        //seller.electricCar();
 
+        // 노홍철 사원이 입사
+        Seller seller = new Seller("노홍철");
+        // 노홍철 사원이 판매한 제품
+//        OldCar[] sellers = {porter, avante, sonata, porter};
+//        seller.oldCarSale(sellers);
+//        ElectricCar[] electricSellers = {ionic, ionic2, ionic3, kona};
+//        seller.electricCar(electricSellers);
+
+        Car[] cars = {porter, kona, ionic2, sonata, avante};
+        seller.sale(cars);
+
+        Car car  = new Car("h", 100);
+        //System.out.println("car와 oldcar가 같은지 비교 " + (car instanceof  ElectricCar));
+        Car car2 = kona;
+        System.out.println(kona.hashCode());
+        System.out.println(car2.hashCode());
+        System.out.println("변경 후 다시 형변환");
+        kona = (ElectricCar)car2;
+        System.out.println(kona.hashCode());
+        System.out.println(car2.hashCode());
+
+        System.out.println(seller);
 
     }
 }

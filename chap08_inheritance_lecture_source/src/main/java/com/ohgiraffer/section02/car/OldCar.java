@@ -1,5 +1,8 @@
 package main.java.com.ohgiraffer.section02.car;
-
+/*
+* 내연 기관 자동차의 경우 동일하게
+* brand명과 가격을 갖는다.
+* */
 public class OldCar extends Car{
 
     private String name;
@@ -25,6 +28,12 @@ public class OldCar extends Car{
 
     public void setOilType(String oilType) {
         this.oilType = oilType;
+    }
+
+    @Override
+    public double getPrice() {
+        System.out.println("내연기관 자동차의 판매가는 : " + super.getPrice() + "원 입니다");
+        return super.getPrice() * 0.1;
     }
 
     @Override
