@@ -68,6 +68,56 @@ public class Application {
         * toUpperCase() : 문자열을 대문자로 변경한다.
         * */
         String value = "java";
+        System.out.println("toUpperCase :" + value.toUpperCase());
+        System.out.println("toLowerCase :" + value.toLowerCase());
+        System.out.println(value);
 
+        /*
+        * subString(): 문자열의 일부 잘라내어 새로운 문자열을 반환한다.
+        * */
+        String javascript = "javascript";
+        System.out.println("substring(3,6) : " + javascript.substring(3,6));
+
+        /*
+        * replace() : 문자열에서 대체할 문자열을 기존의 문자열을 변경해서 변환한다.
+        * */
+
+        System.out.println("replace() : " + javascript.replace("java", "python"));
+
+        /*
+        * length() : 문자열의 길이를 정수형으로 반환한다
+        * */
+
+        /*
+        * isEmpty() : 문자열의 길이가 0이면 true , 아니면 false를 반환해준다.
+        * */
+
+        String test = "";
+        String nullTest = null;
+        System.out.println(test.isEmpty());
+        System.out.println("null TEST " + (nullTest == null));
+        //System.out.println("null Test" + nullTest.isEmpty());
+
+        /*
+        * 문자열 객체를 만드는 방법
+        * "" 리터럴 형태 : 동일한 값을 가지는 인스턴스를 단일 인스턴스로 관련한다.(singletone)
+        * new ("문자열") : 매번 새로운 인스턴스를 생성한다.
+        * */
+
+        String stringTest1 = "java";
+        String stringTest2 = "java";
+        String newString1 = new String("java");
+        String newString2 = new String("java");
+
+        /*
+        * String test = "java"와 같은 리터럴 타입의 문자열은
+        * stak에 있는 string pool에서 리터럴 형태의 문자열은 새로
+        * 동일한 문자열은 리터럴 형식으로 전달하여도 String pool에 존재하는 주소값을 반환한다.
+         * */
+        System.out.println("str1 == str2 " + (stringTest2 == stringTest1));
+        System.out.println("StringTest2 == newStrint1 " + (stringTest1 == newString1));
+        System.out.println("String의 hashcode " + stringTest1.hashCode());
+
+        System.out.println("stringTest의 newString의 값 비교 : " + stringTest2.equals(newString1));
     }
 }
