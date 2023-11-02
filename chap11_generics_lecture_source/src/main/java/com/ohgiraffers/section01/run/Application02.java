@@ -29,20 +29,20 @@ public class Application02 {
         wildCardFarm.superType(new RabbitFarm<Rabbit>(new Rabbit()));
         wildCardFarm.superType(new RabbitFarm<Bunny>(new Bunny()));
 
-        /*
-        아래의 내용을 테스트 하기 전 RabbitFarm<T extends Rabbit> -> RabbitFarm<T extends Object>
+
+        //아래의 내용을 테스트 하기 전 RabbitFarm<T extends Rabbit> -> RabbitFarm<T extends Object>
         // RabbitFarm<T extends Rabbit>으로 타입이 지정되어 있기 때문에
         // superType(RabbitFarm<? super bunny>)로 정의를 하게 되면
         // 허용 범위가 Rabbit ~ Bunny 사이의 조상만 허용이 가능하게 된다.
-        //wildCardFarm.superType(new RabbitFarm<Mamal>(new Mamal()));
+//        wildCardFarm.superType(new RabbitFarm<Mamal>(new Mamal()));
 
-        RabbitFarm<Reptile> test = new RabbitFarm<>();
+        //RabbitFarm<Reptile> test = new RabbitFarm<>();
 
         //  superType(RabbitFarm<? super bunny>)로 정의가 되어 있기 때문에
         // Bunny와 관련이 없는 Reptile 타입을 지시할 수 없게 되는 것이다.
-        //wildCardFarm.superType(new RabbitFarm<Reptile>(new Snake()));
-        //wildCardFarm.superType(new RabbitFarm<DrunkenBunny>(new DrunkenBunny()));
-        */
+//        wildCardFarm.superType(new RabbitFarm<Reptile>(new Snake()));
+//        wildCardFarm.superType(new RabbitFarm<DrunkenBunny>(new DrunkenBunny()));
+
 
     }
 }
