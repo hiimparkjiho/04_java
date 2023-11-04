@@ -13,8 +13,11 @@ public class Application {
         // 구매하는 사람은 최대 10개까지 구매할 수 있다.
 
         Random random = new Random();
+        Scanner scan = new Scanner(System.in);
         Map<Integer, Set<Integer>> buyerLotto = new HashMap<>();
         Set<Integer> winningNumber = new HashSet<>();
+        //System.out.println("구입할 복권의 개수를 입력해주세요: ");
+        //int num = scan.nextInt();
             for(int i = 0; i < 10; i++){
                 Set<Integer> lottoNumber = new HashSet<>();
                 while(lottoNumber.size() < 6){  // 유저 로또
